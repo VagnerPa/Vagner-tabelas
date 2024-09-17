@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <form>
+        <h1>Formulario do Autor</h1>
+        
+        <div class="formulario">
+            <label for="nome"> Titulo Livro</label>
+            <input type="text" id="nome" class="input-padrao" required>
+
+            <label for="endereco"> Nome do Autor</label>
+            <input type="text" id="endereco" class="input-padrao" required>
+
+            <label for="email"> Nome da Editora</label>
+            <input type="text" id="email" class="input-padrao" required>
+
+            <label for="telefone"> Personagem Principal da História do Livro</label>
+            <input type="text" id="telefone" class="input-padrao" required>
+
+            <label for="mensagem"> Observações</label>
+            <textarea cols="70" rows="10" id="mensagem"></textarea>
+
+            <fieldset>
+
+                <legend> Qual é o gênero</legend>
+                <label for="radio-livro"> <input type="radio" name="contato" value="email" id="radio-livro">Romance </label>
+                <label for="radio-livro"> <input type="radio" name="contato" value="email" id="radio-livro">Drama </label>
+                <label for="radio-livro"> <input type="radio" name="contato" value="email" id="radio-livro">Não-Ficção </label>
+                <label for="radio-livro"> <input type="radio" name="contato" value="email" id="radio-livro">Ficção </label>
+                <label for="radio-livro"> <input type="radio" name="contato" value="email" id="radio-livro">Terror </label>
+            </fieldset>
+
+            <fieldset>
+                <legend> Quantas Páginas tem o livro</legend>
+                <select>
+                    <option>20-50</option>
+                    <option>51-100</option>
+                    <option>101-200</option>
+                    <option>201+</option>
+                </select>
+            </fieldset>
+            <label class="checkbox"> <input type="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
+
+            <input type="submit" value="Enviar Formulário">
+        </div>
+        <img src="images-removebg-preview.png" id="livro">
+        <footer>
+            <p class="copyright">&copy; Copyright Formulario - 2024</p>
+        </footer>
+    
+</body>
+</html>
